@@ -1,3 +1,5 @@
+![](json-web-token.jpg)
+
 # Nodje JWT - a little simple test
 
 https://github.com/auth0/node-jsonwebtoken
