@@ -1,10 +1,9 @@
 
 # Node JWT - a little simple test
 
-https://github.com/auth0/node-jsonwebtoken
-
 ![](json-web-token.jpg)
 
+https://github.com/auth0/node-jsonwebtoken
 
 Instalando a lib jsonwebtoken
 
