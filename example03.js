@@ -1,6 +1,5 @@
 var jwt = require('jsonwebtoken');
 
-
 // var token = jwt.sign();
 // var token = jwt.sign({});
 // var token = jwt.sign({}, '');

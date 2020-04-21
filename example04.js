@@ -1,6 +1,5 @@
 var jwt = require('jsonwebtoken');
 
-
 //
 // secret
 // 

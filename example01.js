@@ -6,7 +6,6 @@ var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 console.log(token);
 console.log(utils.inspect(jwt));
 
-
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1ODcxNTI4MzN9.1MJPeOK6gFBT8utaE0qQntLFG7hIon6DrFmiOjIo6gE
 // {
 //   decode: [Function (anonymous)],
@@ -16,4 +15,3 @@ console.log(utils.inspect(jwt));
 //   NotBeforeError: [Function: NotBeforeError],
 //   TokenExpiredError: [Function: TokenExpiredError]
 // }
-

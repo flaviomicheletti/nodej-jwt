@@ -1,7 +1,6 @@
 var jwt = require('jsonwebtoken');
 
 
-
 var payload = { foo: 'bar' };
 var token = jwt.sign(payload, '123');
 console.log(token);
