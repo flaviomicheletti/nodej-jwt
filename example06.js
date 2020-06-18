@@ -10,10 +10,14 @@ var secret = '123';
 // 
 var payload = {foo: 'bar'};
 var token = jwt.sign(payload, secret);
-console.log(token);
+// console.log(token);
 
 // 
 // Returns the payload decoded if the signature is valid
 // 
-var decoded = jwt.verify(token, 'wrong-secret');
-console.log(decoded.foo);
+try {
+    var decoded = jwt.verify(token, 'wrong-secret');
+    // console.log(decoded.foo);
+} catch (err) {
+    // console.log(err.message);
+}

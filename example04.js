@@ -3,7 +3,7 @@ var jwt = require('jsonwebtoken');
 //
 // secret
 // 
-var secret = '1';
+var secret = '123';
 
 // 
 // Returns the JsonWebToken as string
