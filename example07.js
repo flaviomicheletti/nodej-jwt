@@ -1,33 +1,23 @@
-var lib = require('./example07lib.js');
+const lib = require('./example07lib.js');
 
-//
-// secret (enviroment)
-// 
-process.env.SECRET = '123';
-
-//
-// dados para gerar token
-//
-let params = {
-    payload: {foo: 'bar'},
-    secret: process.env.SECRET
-}
+const payload = { foo: 'bar' };
+const secret = '123';
 
 //
 // gerando o token
 //
-let token = lib.sign(params.payload, params.secret);
+const token = lib.sign(payload, secret);
 
 //
 // verificando com sucesso
 //
-let decodedSucess = lib.verify(token, process.env.SECRET);
+const decodedSucess = lib.verify(token, secret);
 console.log("ok :", decodedSucess);
 // ok : { foo: 'bar', iat: 1592506099 }
 
 //
 // verificando com falha
 //
-let decodedFailed = lib.verify(token, "wrong-secret");
-console.log("neg: " + decodedFailed);
-// neg: invalid signature
+const decodedFailed = lib.verify(token, "wrong-secret");
+console.log(decodedFailed);
+// invalid signature

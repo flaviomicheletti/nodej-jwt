@@ -1,23 +1,23 @@
-var jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
+
+const secret = '123';
+const payload = { foo: 'bar' };
 
 //
-// secret
-// 
-var secret = '123';
-
-// 
-// Returns the JsonWebToken as string
-// 
-var payload = {foo: 'bar'};
-var token = jwt.sign(payload, secret);
-// console.log(token);
+// gerando o token
+//
+const token = jwt.sign(payload, secret);
+console.log(token);
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2MTgwOTEzODh9.HeMkawu77ryTNDijMU91K6JTdMEp6XokL_QHrGSnYl8
 
 // 
 // Returns the payload decoded if the signature is valid
 // 
 try {
-    var decoded = jwt.verify(token, 'wrong-secret');
-    // console.log(decoded.foo);
+    const decoded = jwt.verify(token, 'wrong-secret');
+    console.log(decoded.foo);
+    // not displayed
 } catch (err) {
-    // console.log(err.message);
+    console.log(err.message);
+    // invalid signature
 }

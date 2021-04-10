@@ -1,8 +1,8 @@
-var jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 for (i = 0; i < 10; i++) {
     setTimeout(function () {
-        var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
+        const token = jwt.sign({ foo: 'bar' }, 'shhhhh');
         console.log(token);
     }, i * 1000);
 }

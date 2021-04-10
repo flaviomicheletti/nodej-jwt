@@ -1,7 +1,7 @@
-var utils = require('util');
+const utils = require('util');
 
-var jwt   = require('jsonwebtoken');
-var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
+const jwt   = require('jsonwebtoken');
+const token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 
 console.log(token);
 console.log(utils.inspect(jwt));

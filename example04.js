@@ -1,19 +1,18 @@
-var jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
+
+const secret = '123';
+const payload = { foo: 'bar' };
 
 //
-// secret
-// 
-var secret = '123';
-
-// 
-// Returns the JsonWebToken as string
-// 
-var payload = {foo: 'bar'};
-var token = jwt.sign(payload, secret);
+// gerando o token
+//
+const token = jwt.sign(payload, secret);
 console.log(token);
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE2MTgwOTEyMzl9.pGZ_uqm0zle8WQVyMukm93vf8rrQl8dacuuDBbmupYM
 
 // 
 // Returns the payload decoded if the signature is valid
 // 
-var decoded = jwt.verify(token, secret);
+const decoded = jwt.verify(token, secret);
 console.log(decoded.foo);
+// bar
