@@ -1,0 +1,17 @@
+// How to generate secret key ?
+
+//
+// https://nodejs.org/api/crypto.html
+//
+
+console.log(require('crypto').randomBytes(256).toString('base64'))
+
+/* Some examples...
+
+tQf5FRJsclXfPQB6JugmJTiFfta306IEBOyA7JSplmqNaQiiLPnX7g2LRqScIEOU3cpCmxfa4sdS3cnbo864lsiGBIuat1nnZv/XXjVnYRL9ot7VUTaBI3kul3I1VsyoaGmKAHWHLzmK+qgrHXEbqLPFQ9Ll15sHs/KGzrRRfub29ioW6eZIMlt49QvY/eCvdAEdtLSCNSg6CUHQdg5yQo2jf+wzC9KGhn0YhBboisjJn1c/gis7IVlvdgg8exMErWkP59EaDI3FMg4kO9FY6VDPFBgJ8PAEU9rD0EoAYbbIMSXHylLB4rm2oTeVdKA0lEzSwk4YW9//4MUWCEeToQ==
+
+p0LEIqAXVXIKty9b/Ir+Bq1NKS5v+6VE8z4ed48NjcvUvep1L6qPCjWK8zQzycA6xbpl94upa2CDwfJqMwTRFsd8kyEZ6HG5CiQmi/Va1baNf8lundMofsAVRFdribaiBnjQgu1ngp7wRRdvFl12UFIEDUBYm+R0jEgf7e0XrFUttxGbYIFVrUrq+nibJhzYsRQjZtEEHo82nEtjE/4HiCeXDz6lVt7A+zsVXD0Lg1H/AnboMsHlckptg1lCJVJeHLbEcch//zIZZnm+JQxUPirDCS1C8y+cxQgxioTRR7CEhjBZ5FE5zyNAIhS+PZ7QHoTWhOJuYfvo57TnjWKuSw==
+
+Eop6rOp629gp9d6uCK92DWhMGUL+OgeSUrHAnmQEp15uxicnobS0w3ozRfYeG9EheRdiIcijuL36AEXlFqTTs98TVGGOE9GP5a9eupracj3eENnGPwf0UPcj5qunQENTaYHnXOQ6/qiLcMxzhL0ZyUYAjsmJe2ynKMFVBmt6ArHKcN/8u/skzyAjzBB3R3RpFBCDQedMVIUvLDxA6QWf8dFF9IQQJCX8Yq3HUR0f5jaYaFNl1h075pr3+0wv8G3tCSWJfRemjsWQaafe/0nu8/dfHoq4tXoIdbtaSX3ecw3q1cknnBgyYASWKdkXp4sO9wQdj5WbOb1+Kug4t28uAw==
+
+*/
