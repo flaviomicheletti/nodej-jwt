@@ -1,7 +1,7 @@
 const lib = require('./example07lib.js');
 
 const payload = { foo: 'bar' };
-const secret = '123';
+const secret = 'd41d8cd98f00b204e9800998ecf8427e';
 
 //
 // gerando o token
